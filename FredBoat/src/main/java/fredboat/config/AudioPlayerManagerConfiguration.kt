@@ -226,14 +226,13 @@ class AudioPlayerManagerConfiguration {
                     .setCookieSpec(CookieSpecs.IGNORE_COOKIES)
                     .build()
         }
-        youtubeAudioSourceManager.setMixLoaderMaximumPoolSize(50)
         youtubeAudioSourceManager.setPlaylistPageCount(3)
         return youtubeAudioSourceManager
     }
 
     @Bean(destroyMethod = "")
     @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
-    fun soundCloudAudioSourceManager() = SoundCloudAudioSourceManager()
+    fun soundCloudAudioSourceManager() = SoundCloudAudioSourceManager.createDefault()
 
     @Bean(destroyMethod = "")
     @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
