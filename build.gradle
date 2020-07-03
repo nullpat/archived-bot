@@ -65,7 +65,7 @@ subprojects {
         //audio deps
         lavaplayerVersion           = '1.3.50'
         lavaplayerIpRotatorVersion  = '0.1.7'
-        lavalinkVersion             = 'cab6c587'
+        lavalinkVersion             = '41e1025c'
 
         //utility deps
         jsonOrgVersion              = '20180130'
